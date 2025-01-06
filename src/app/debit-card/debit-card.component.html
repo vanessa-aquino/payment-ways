@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Cartão de Débito</h1>
+  <h3 class="data-card">
+    Dados do Cartão
+  </h3>
+  <div class="data-credit">
+    <div class="datas-card">
+      <label for="number-card"><p>Número do Cartão</p></label>
+      <input type="text" id="number-card" maxlength="16" minlength="16" required (keypress)="validateNumberOnly($event)">
+    </div>
+    <div class="datas-card">
+      <label for="name"><p>Nome do Títular</p></label>
+      <input type="text" id="name" required>
+    </div>
+    <div class="datas-card">
+      <label for="date"><p>Vencimento</p></label>
+      <input type="month" id="date" required>
+    </div>
+    <div class="datas-card">
+      <label for="cvv"><p>CVV</p></label>
+      <input type="password" id="cvv" maxlength="3" minlength="3" required (keypress)="validateNumberOnly($event)">
+    </div>
+  </div>

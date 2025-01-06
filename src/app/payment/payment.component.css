@@ -1,0 +1,43 @@
+.payment {
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 25px;
+}
+
+.row > span > strong {
+  margin-left: 5px;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0e0e0eda;
+}
+
+.total-value {
+  color: #4c4c9e;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #eee;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}

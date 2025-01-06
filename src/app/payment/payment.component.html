@@ -1,0 +1,37 @@
+<div class="payment">
+  <form class="container-fluid">
+    <div class="row">
+      <span class="total">
+        Valor Total
+        <strong class="total-value">
+          {{totalValueStr}}
+        </strong>
+      </span>
+    </div>
+
+    <div>
+      <app-payment-ways (paymentWayChange)="updatePaymentWay($event)"></app-payment-ways>
+    </div>
+
+    <div *ngIf="selectedPaymentOption?.value === 'credit-card'">
+      <app-credit-card (parcelChange)="updateParcel($event)"></app-credit-card>
+    </div>
+
+    <div *ngIf="selectedPaymentOption?.value === 'pix'">
+      <app-pix></app-pix>
+    </div>
+
+    <div *ngIf="selectedPaymentOption?.value === 'debit-card'">
+      <app-debit-card></app-debit-card>
+    </div>
+
+    <div *ngIf="selectedPaymentOption?.value === 'boleto'">
+      <app-boleto></app-boleto>
+    </div>
+
+    <div id="button">
+      <button>CONFIRMAR PAGAMENTO</button>
+    </div>
+
+  </form>
+</div>
