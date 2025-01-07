@@ -40,8 +40,6 @@ export class PaymentComponent implements OnInit {
 
   updateParcel(parcelOption: ParcelOption): void {
     this.selectedParcelOption = parcelOption;
-    console.log('selecionado' + parcelOption)
   }
-
 
 }
