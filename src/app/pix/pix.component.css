@@ -141,6 +141,13 @@ button:active {
   }
 }
 
+@media (max-width: 404px) {
+  button {
+    top: 158px;
+    right: 65px;
+  }
+}
+
 @media (max-width: 385px) {
   button {
     top: 157px;
