@@ -2,6 +2,7 @@
   padding: 10px;
   border: 2px solid #eee;
   border-radius: 25px;
+  margin-top: 20px;
 }
 
 .row > span > strong {
@@ -23,6 +24,10 @@
   color: #4c4c9e;
 }
 
+select {
+  cursor: pointer;
+}
+
 #button {
   display: flex;
   justify-content: center;
@@ -36,6 +41,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 button:hover {

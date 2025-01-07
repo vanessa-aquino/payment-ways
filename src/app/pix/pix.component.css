@@ -68,7 +68,7 @@ input {
 button {
   position: absolute;
   top: 112px;
-  right: 125px;
+  right: 130px;
   background: none;
   border: #eee;
   text-transform: uppercase;
@@ -78,9 +78,17 @@ button {
   border-radius: 5px;
 }
 
-
 button:active {
   background-color: #e0e0e0;
+}
+
+.feedback-message {
+  color: green;
+  font-weight: bold;
+}
+
+.feedback-message > p {
+  margin: 0;
 }
 
 @media (max-width: 669px) {

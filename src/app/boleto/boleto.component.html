@@ -8,10 +8,13 @@
   </div>
   <div class="code">
     <img src="assets/img/codigo-barra.png">
-    <p>55664.48814 8947.5479 77841.48415 2 8897787000070000</p>
+    <p #textToCopy >55664.48814 8947.5479 77841.48415 2 8897787000070000</p>
   </div>
 <div class="buttons">
-  <button>Copiar linha digitável</button>
-  <button>Imprimir boleto</button>
+  <button (click)="copyText($event)">Copiar linha digitável</button>
+  <button (click)="openPrinter($event)">Imprimir boleto</button>
 </div>
+  <div *ngIf="showMessage" class="feedback-message">
+  <p>Código Copiado com Sucesso!</p>
+  </div>
 </div>

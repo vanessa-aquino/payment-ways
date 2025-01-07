@@ -68,3 +68,8 @@ button:hover {
   background-color: #e0e0e0;
 }
 
+.feedback-message {
+  color: green;
+  font-weight: bold;
+}
+

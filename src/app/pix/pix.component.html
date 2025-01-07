@@ -15,7 +15,10 @@
     <div class="container-bottom">
       <h3>Ou copie este código para fazer o pagamento</h3>
       <p>Escolha pagar via Pix pelo seu Internet Banking ou app de pagamentos. Depois, cole o seguinte código:</p>
-      <input type="text" value="08979530dfdsf548700ausgaygs0000000"> <button>Copiar</button>
+      <input #textToCopy type="text" value="08979530dfdsf548700ausgaygs0000000"> <button (click)="copyText($event)">Copiar</button>
+    </div>
+    <div *ngIf="showMessage" class="feedback-message">
+      <p>Código Copiado com Sucesso!</p>
     </div>
 </div>
 
