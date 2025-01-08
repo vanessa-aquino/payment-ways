@@ -1,17 +1,57 @@
+<header>
+  <button><img src="assets/img/back.png" class="img"></button>
+  <h1>Pagamento</h1>
+</header>
+<nav>
+  <div class="nav-delivery">
+    <button class="nav-button"><span class="content-button">1</span></button>
+    <p>Entrega</p>
+  </div>
+  <div class="nav-payment">
+    <button class="nav-button"><span class="content-button">2</span></button>
+    <p>Pagamento</p>
+  </div>
+  <div class="nav-confirmation">
+    <button class="nav-button"><span class="content-button">3</span></button>
+    <p>Validação</p>
+  </div>
+</nav>
 <div class="payment">
   <form class="container-fluid">
     <div class="row">
       <span class="total">
-        Valor Total
+        Valor Total -
         <strong class="total-value">
           {{totalValueStr}}
         </strong>
       </span>
     </div>
 
-    <div>
-      <app-payment-ways (paymentWayChange)="updatePaymentWay($event)"></app-payment-ways>
+    <div class="container-data">
+      <form class="personal-data">
+        <div class="name">
+          <label for="name">Nome:</label>
+          <input type="text" name="name" placeholder="Insira seu nome" required>
+        </div>
+        <div class="surname">
+          <label for="surname">Sobrenome:</label>
+          <input type="text" name="surname" placeholder="Insira seu sobrenome" required>
+        </div>
+        <div class="email">
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Insira aqui seu email" required>
+        </div>
+        <div class="phone">
+          <label for="phone">Telefone:</label>
+          <input type="text" name="phone" placeholder="(xx) xxxx-xxxx" required>
+        </div>
+      </form>
+      <div>
+        <app-payment-ways (paymentWayChange)="updatePaymentWay($event)"></app-payment-ways>
+      </div>
     </div>
+
+
 
     <div *ngIf="selectedPaymentOption?.value === 'credit-card'">
       <app-credit-card (parcelChange)="updateParcel($event)"></app-credit-card>

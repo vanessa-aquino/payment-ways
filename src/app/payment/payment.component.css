@@ -1,9 +1,109 @@
-.payment {
-  padding: 10px;
-  border: 2px solid #eee;
-  border-radius: 25px;
+header {
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  align-items: center;
+  width: 90%;
+  margin: auto;
   margin-top: 20px;
 }
+
+header > button {
+  background: none;
+  padding: 0;
+}
+
+.img {
+  position: inherit;
+  width: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-button {
+  border: 2px solid var(--detail-color);
+  color: var(--detail-color);
+  background-color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 30%;
+  transform: rotate(45deg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 1px 8px 7px rgba(105,121,248,0.18);
+  -webkit-box-shadow: 0px 1px 8px 7px rgba(105,121,248,0.18);
+  -moz-box-shadow: 0px 1px 8px 7px rgba(105,121,248,0.18);
+}
+
+.nav-button:hover {
+  background-color: var(--detail-color);
+  color: #ffffff;
+}
+
+.content-button {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+.nav-payment > .nav-button {
+  background-color: var(--detail-color);
+  color: #ffffff;
+}
+
+.nav-payment > p {
+  color: var(--contrast-color);
+}
+
+.nav-delivery, .nav-payment, .nav-confirmation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  color: var(--secundary-color);
+  min-width: 10%;
+}
+
+.nav-delivery::after,
+.nav-payment::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  right: -80px;
+  width: 110px;
+  height: 2px;
+  background-color: var(--secundary-color);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.payment {
+  width: 90%;
+  border-top: 2px solid var(--secundary-color);
+  margin: auto;
+  margin-top: 30px;
+}
+
+.container-fluid {
+  border: 2px solid blue;
+  margin-top: 20px;
+}
+
 
 .row > span > strong {
   margin-left: 5px;
@@ -15,13 +115,13 @@
 }
 
 .total {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #0e0e0eda;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--contrast-color);
 }
 
 .total-value {
-  color: #4c4c9e;
+  color: var(--detail-color);
 }
 
 select {
@@ -48,3 +148,23 @@ button:hover {
   background-color: #e0e0e0;
 }
 
+/* Responsividade */
+
+@media(min-width: 768px) {
+  .payment .container-fluid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+  }
+
+  .container-data {
+    border: 3px solid red;
+    grid-column: 1 / 2
+  }
+
+  #button {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+}
