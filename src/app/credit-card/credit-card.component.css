@@ -5,23 +5,28 @@
 }
 
 h1 {
-  margin-top: 10px;
-  margin-bottom: 0px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 4px;
 }
 
 h3 {
   margin-top: 10px;
-  color: #aaaaaa;
+  color: var(--gray);
+  font-weight: 700;
+  margin-left: 4px;
   font-size: 1rem;
 }
 
+
+
 .data-payment > h3 {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 
 .data-credit {
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 5px;

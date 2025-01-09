@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-top">
+    <img src="assets/img/chip.png">
+    <img src="assets/img/bank-logo.png">
+  </div>
+  <div class="card-midle">
+    <p id="numbers-card">{{ cardNumber || '**** **** **** ****'}}</p>
+  </div>
+  <div class="card-bottom">
+    <div class="card-name">
+      <p>Nome</p>
+      <p id="your-name">{{ cardHolderName || 'seu nome'}}</p>
+    </div>
+    <div class="card-validity">
+      <p>Validade</p>
+      <p id="validity">{{ cardValidity || '00/00'}}</p>
+    </div>
+    <img src="assets/img/visa-logo.png" class="visa-logo">
+  </div>
+</div>

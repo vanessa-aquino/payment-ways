@@ -1,16 +1,17 @@
 <div class="container">
-    <h1>Cartão de Crédito</h1>
-    <h3 class="data-card">
-      Dados do Cartão
-    </h3>
+  <h1>Cartão de Crédito</h1>
+  <h3 class="data-card">
+    Dados do Cartão
+  </h3>
+  <app-card [cardNumber]="creditCardNumber" [cardHolderName]="holderName"></app-card>
     <div class="data-credit">
       <div class="datas-card">
         <label for="number-card"><p>Número do Cartão</p></label>
-        <input type="text" id="number-card" maxlength="16" minlength="16" required (keypress)="validateNumberOnly($event)">
+        <input type="text" (input)="onNumberChange($event)" id="number-card" maxlength="16" minlength="16" required (keypress)="validateNumberOnly($event)">
       </div>
       <div class="datas-card">
         <label for="name"><p>Nome do Títular</p></label>
-        <input type="text" id="name" required>
+        <input type="text" (input)="onHolderNameChange($event)" id="name" required>
       </div>
       <div class="datas-card">
         <label for="date"><p>Vencimento</p></label>

@@ -28,6 +28,7 @@ h3 {
   height: auto;
   padding-bottom: 10px;
   border-bottom: 2px solid #eee;
+  margin-top: 50px;
 
   @media (max-width: 580px) {
     display: flex;

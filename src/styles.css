@@ -31,5 +31,28 @@ body {
 input:focus {
   border: 2px solid var(--detail-color);
   border-color: var(--detail-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+
+select {
+  background-color: var(--primary-color);
+  border: 2px solid var(--detail-color);
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--contrast-color);
+  border-radius: 8px;
+  background-image: url('assets/img/arrow-down.png');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 25px;
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+}
+
+select:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
 

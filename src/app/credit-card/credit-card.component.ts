@@ -2,18 +2,37 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { ParcelOption } from '../models/parcel-option.interface';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { CardComponent } from "../card/card.component";
 
 @Component({
   selector: 'app-credit-card',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, CardComponent],
   templateUrl: './credit-card.component.html',
   styleUrl: './credit-card.component.css'
 })
 export class CreditCardComponent {
 
+  @Output() creditCardNumberChange = new EventEmitter<string>();
+  creditCardNumber: string = '';
+
+  onNumberChange(event: Event) {
+    const input = event.target as HTMLInputElement;
+    this.creditCardNumber = input.value;
+    this.creditCardNumberChange.emit(this.creditCardNumber);
+  }
+
+  @Output() holderNameChange = new EventEmitter<string>();
+  holderName: string = '';
+
+  onHolderNameChange(event: Event) {
+    const input = event.target as HTMLInputElement;
+    this.holderName = input.value;
+    this.holderNameChange.emit(this.holderName);
+  }
+
+
   @Output() parcelChange: EventEmitter<ParcelOption> = new EventEmitter<ParcelOption>();
   selectedParcelOption = 1;
-
   parcelOptions: Array<ParcelOption> = [
     {display: '1x sem juros', value: 1, tax: 0},
     {display: '2x sem juros', value: 2, tax: 0},
