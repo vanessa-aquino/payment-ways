@@ -1,0 +1,62 @@
+.container-data {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--detail-color);
+  box-shadow: 10px 10px 5px 0px rgba(79,79,79,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(79,79,79,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(79,79,79,0.75);
+}
+
+.container-data > h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.personal-data {
+  margin-top: 10px;
+}
+
+.name,
+.surname,
+.email,
+.phone {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.phone {
+  margin-bottom: 0px;
+}
+
+.name > label,
+.surname > label,
+.email > label,
+.phone > label {
+  font-size: 1rem;
+  color: var(--gray);
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.name > input,
+.surname > input,
+.email > input,
+.phone > input {
+  height: 40px;
+  border-radius: 8px;
+  padding-left: 4px;
+  font-size: 1rem;
+  border: 2px solid var(--secundary-color);
+  outline-color: var(--detail-color);
+  background-color: var(--primary-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -9,10 +9,11 @@ import { DebitCardComponent } from './debit-card/debit-card.component';
 import { BoletoComponent } from './boleto/boleto.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PaymentWaysComponent } from './payment-ways/payment-ways.component';
+import { PersonalDataComponent } from './personal-data/personal-data.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CreditCardComponent, PaymentComponent, PaymentWaysComponent, CommonModule, FormsModule, PixComponent, DebitCardComponent, BoletoComponent,],
+  imports: [RouterOutlet, CreditCardComponent, PaymentComponent, PaymentWaysComponent, CommonModule, FormsModule, PixComponent, DebitCardComponent, BoletoComponent, PersonalDataComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

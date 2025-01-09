@@ -1,0 +1,23 @@
+<div class="container-data">
+  <h2>Dados Pessoais</h2>
+  <form class="personal-data">
+    <div class="name">
+      <label for="data-name">Nome:</label>
+      <input type="text" name="data-name" id="data-name" placeholder="Insira seu nome" required>
+    </div>
+    <div class="surname">
+      <label for="surname">Sobrenome:</label>
+      <input type="text" name="surname" id="surname" placeholder="Insira seu sobrenome" required>
+    </div>
+    <div class="email">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="seuemail@email.com" required>
+    </div>
+    <div class="phone">
+      <label for="phone">Telefone:</label>
+      <input type="number" name="phone" id="phone" placeholder="(xx) xxxxx-xxxx" required required pattern="\(\d{2}\) \d{4,5}-\d{4}" title="Formato esperado: (99) 99999-9999 ou (99) 9999-9999">
+    </div>
+  </form>
+  <div>
+  </div>
+</div>

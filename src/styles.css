@@ -14,6 +14,7 @@
   --primary-color: #f8f9fa;
   --secundary-color: #adb5bd;
   --contrast-color: #0e0e0e;
+  --gray: #4F4F4F;
   --detail-color: #6979F8;
   --font-titles: 'Montserrat', 'Roboto', sans-serif;
 }
@@ -26,3 +27,9 @@ body {
   background-color: var(--primary-color);
   color: var(--contrast-color);
 }
+
+input:focus {
+  border: 2px solid var(--detail-color);
+  border-color: var(--detail-color);
+}
+

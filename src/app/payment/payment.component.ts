@@ -7,10 +7,11 @@ import { CommonModule } from '@angular/common';
 import { PixComponent } from "../pix/pix.component";
 import { DebitCardComponent } from "../debit-card/debit-card.component";
 import { BoletoComponent } from "../boleto/boleto.component";
+import { PersonalDataComponent } from '../personal-data/personal-data.component';
 
 @Component({
   selector: 'app-payment',
-  imports: [PaymentWaysComponent, CreditCardComponent, CommonModule, PixComponent, DebitCardComponent, BoletoComponent],
+  imports: [PaymentWaysComponent, CreditCardComponent, CommonModule, PixComponent, DebitCardComponent, BoletoComponent, PersonalDataComponent],
   templateUrl: './payment.component.html',
   styleUrl: './payment.component.css'
 })
