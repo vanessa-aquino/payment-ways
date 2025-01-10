@@ -1,59 +1,32 @@
-# ProjectComponents
+# Sistema de Pagamento 💳
+Este projeto é um Sistema de Pagamento desenvolvido com Angular, que simula o processo de pagamento utilizando diferentes métodos, como Cartão de Crédito, Débito, Pix e Boleto. Ele também inclui a validação das informações inseridas pelo usuário, garantindo que os dados estejam corretos e prontos para o processamento. Uma experiência simples e segura para o usuário! 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.5.
 
-## Development server
+## Funcionalidades 🛠️
 
-To start a local development server, run:
+- **Cadastro de Pagamento:** O usuário pode escolher entre diferentes formas de pagamento e fornecer as informações necessárias. 
+- **Validação de Dados:** Todos os campos de entrada são validados antes do envio. 
 
-```bash
-ng serve
-```
+## Tecnologias Utilizadas ⚙️
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Angular:** Framework para construção da interface de usuário.
+- **Cleave.js:** Biblioteca para formatação de campos como cartão de crédito, data de validade e CVV.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## Como Rodar o Projeto 🚀
+#### Pré-requisitos:
+Certifique-se de ter o Node.js instalado em sua máquina. Caso não tenha, baixe e instale a partir do site oficial.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+#### Passos:
+- Clone o repositório para sua máquina local. 
+- Instale as dependências com npm install. 
+- Inicie o servidor de desenvolvimento com ng serve. 
+- Abra o navegador e acesse http://localhost:4200.  
+## Contribuições 🙌
 
-```bash
-ng generate --help
-```
+Contribuições são bem-vindas! Se você tiver ideias ou melhorias para o projeto, sinta-se à vontade para fazer um fork, criar uma branch e submeter um pull request. 
 
-## Building
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contato 📬
+Você pode me encontrar no [linkedin](https://www.linkedin.com/in/vanessa-aquino-1b0b29289/) ou enviar um e-mail para [E-mail](mailto:vanessaquinoo@hotmail.com) Estou sempre aberta a discussões sobre desenvolvimento e aprendizado.
