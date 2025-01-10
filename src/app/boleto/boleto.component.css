@@ -1,34 +1,31 @@
 .container {
-  border-top: 2px solid #eee;
-  border-bottom: 2px solid #eee;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  margin-top: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--detail-color);
+  box-shadow: 10px 10px 5px 0px rgba(79,79,79,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(79,79,79,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(79,79,79,0.75);
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 4px;
+  text-align: center;
 }
 
 .container > p {
-  width: 80%;
-  font-size: 1.1rem;
-  margin-top: 0;
-  color: #aaaaaa;
-  font-weight: bold;
-}
-
-.infos {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
   font-size: 1rem;
-}
-
-.infos > img {
-  width: 20px;
+  color: var(--contrast-color);
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .code {
@@ -39,37 +36,59 @@ h2 {
 }
 
 .code > img {
+  margin-top: 10px;
   width: 100%;
   height: 80px;
 }
 
+.code > p {
+  font-size: 1rem;
+  color: var(--contrast-color);
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5px;
+}
+
 .buttons {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
-  margin-top: 20px;
-  background-color: #eee;
-  border: none;
-  padding: 14px;
-  border-radius: 10px;
   cursor: pointer;
   text-transform: uppercase;
+  margin-top: 10px;
+  height: 40px;
+  width: 90%;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--detail-color);
+  border: 2px solid var(--detail-color);
+  color: var(--primary-color);
+  letter-spacing: 2px;
 }
 
 button:last-child {
   margin-top: 15px;
-  background-color: #bbb9b9;
+  background-color: var(--gray);
+  border: 2px solid var(--gray);
 }
 
 button:hover {
-  background-color: #e0e0e0;
+  border: 2px solid var(--detail-color);
+  border-color: var(--detail-color);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  transition: ease-in-out;
+  transition-duration: 0.5s;
 }
 
 .feedback-message {
-  color: green;
+  color: var(--detail-color);
   font-weight: bold;
+  margin-top: 10px;
 }
 

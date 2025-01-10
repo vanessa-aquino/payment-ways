@@ -22,7 +22,7 @@
 
 .card-midle {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -57,7 +57,7 @@
 #your-name,
 #validity {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: normal;
 }
 

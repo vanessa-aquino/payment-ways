@@ -34,9 +34,10 @@ export class DebitCardComponent {
     this.cardValidityChange.emit(this.cardValidity);
   }
 
-  validateNumberOnly(keyboardEvent: KeyboardEvent): void {
-    if(isNaN(parseInt(keyboardEvent.key))) {
-      keyboardEvent.preventDefault();
-    };
+  validateNumberOnly(event: KeyboardEvent): void {
+    const allowedKeys = ['Backspace', 'Tab', 'ArrowLeft', 'ArrowRight'];
+    if(isNaN(Number(event.key)) && !allowedKeys.includes(event.key)) {
+      event.preventDefault();
+    }
   }
 }

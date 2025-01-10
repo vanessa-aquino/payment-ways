@@ -1,13 +1,13 @@
 <div class="container">
-  <h1>Cartão de Débito</h1>
+  <h2>Cartão de Débito</h2>
   <h3 class="data-card">
     Dados do Cartão
   </h3>
   <app-card [cardNumber]="debitCardNumber" [cardHolderName]="holderName" [cardValidity]="cardValidity"></app-card>
-  <div class="data-credit">
+  <div class="data-debit">
     <div class="datas-card">
       <label for="number-card"><p>Número do Cartão</p></label>
-      <input type="text" (input)="onNumberChange($event)" id="number-card" maxlength="19" placeholder="0000 0000 0000 0000" required (keypress)="validateNumberOnly($event)">
+      <input type="text" (input)="onNumberChange($event)" id="number-card" maxlength="19" placeholder="0000 0000 0000 0000" required (keypress)="validateNumberOnly($event)" inputmode="numeric">
     </div>
     <div class="datas-card">
       <label for="name"><p>Nome do Títular</p></label>
@@ -19,6 +19,6 @@
     </div>
     <div class="datas-card">
       <label for="cvv"><p>CVV</p></label>
-      <input type="password" id="cvv" maxlength="3" minlength="3" placeholder="123" required (keypress)="validateNumberOnly($event)">
+      <input type="password" id="cvv" maxlength="3" minlength="3" placeholder="123" required (keypress)="validateNumberOnly($event)" inputmode="numeric">
     </div>
   </div>

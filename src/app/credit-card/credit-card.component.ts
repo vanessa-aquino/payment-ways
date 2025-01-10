@@ -54,10 +54,11 @@ export class CreditCardComponent {
     {display: '12x com juros de 1,0% a.m.', value: 12, tax: 1 / 100},
   ]
 
-  validateNumberOnly(keyboardEvent: KeyboardEvent): void {
-    if(isNaN(parseInt(keyboardEvent.key))) {
-      keyboardEvent.preventDefault();
-    };
+  validateNumberOnly(event: KeyboardEvent): void {
+    const allowedKeys = ['Backspace', 'Tab', 'ArrowLeft', 'ArrowRight'];
+    if(isNaN(Number(event.key)) && !allowedKeys.includes(event.key)) {
+      event.preventDefault();
+    }
   }
 
   updateParcel(): void {
