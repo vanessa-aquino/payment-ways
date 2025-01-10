@@ -1,6 +1,7 @@
 .payment-way {
   margin-top: 15px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .col-md-8 {
@@ -13,7 +14,22 @@
   padding: 10px;
   border-bottom: 2px solid var(--secundary-color);
   color: var(--constrast-color);
-  padding-bottom: 20px;
+  padding-bottom: 34px;
+}
+
+.col-md-8::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url('/assets/img/money.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  bottom: -12px;
+  left: 45%;
 }
 
 .form-label {

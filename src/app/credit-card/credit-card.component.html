@@ -1,25 +1,25 @@
 <div class="container">
-  <h1>Cartão de Crédito</h1>
+  <h2>Cartão de Crédito</h2>
   <h3 class="data-card">
     Dados do Cartão
   </h3>
-  <app-card [cardNumber]="creditCardNumber" [cardHolderName]="holderName"></app-card>
+  <app-card [cardNumber]="creditCardNumber" [cardHolderName]="holderName" [cardValidity]="cardValidity"></app-card>
     <div class="data-credit">
       <div class="datas-card">
         <label for="number-card"><p>Número do Cartão</p></label>
-        <input type="text" (input)="onNumberChange($event)" id="number-card" maxlength="16" minlength="16" required (keypress)="validateNumberOnly($event)">
+        <input type="text" (input)="onNumberChange($event)" id="number-card" maxlength="19" placeholder="0000 0000 0000 0000" required (keypress)="validateNumberOnly($event)">
       </div>
       <div class="datas-card">
         <label for="name"><p>Nome do Títular</p></label>
-        <input type="text" (input)="onHolderNameChange($event)" id="name" required>
+        <input type="text" (input)="onHolderNameChange($event)" id="name" placeholder="Nome do titular do cartão" required>
       </div>
       <div class="datas-card">
         <label for="date"><p>Vencimento</p></label>
-        <input type="month" id="date" required>
+        <input type="text" (input)="onCardValidityChange($event)" maxlength="5" id="month-input" placeholder="MM/AA" required>
       </div>
       <div class="datas-card">
         <label for="cvv"><p>CVV</p></label>
-        <input type="password" id="cvv" maxlength="3" minlength="3" required (keypress)="validateNumberOnly($event)">
+        <input type="password" id="cvv" maxlength="3" minlength="3" placeholder="123" required (keypress)="validateNumberOnly($event)">
       </div>
     </div>
 

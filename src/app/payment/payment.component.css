@@ -130,14 +130,8 @@ nav {
   color: var(--detail-color);
 }
 
-#button {
-  display: flex;
-  justify-content: center;
-}
-
 button {
   margin-top: 20px;
-  background-color: #eee;
   border: none;
   padding: 14px;
   border-radius: 10px;
@@ -146,8 +140,34 @@ button {
   margin-bottom: 20px;
 }
 
-button:hover {
-  background-color: #e0e0e0;
+
+#container-button {
+  display: flex;
+  justify-content: center;
+}
+
+#confirm-button {
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 40px;
+  width: 90%;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--detail-color);
+  border: 2px solid var(--detail-color);
+  color: var(--primary-color);
+  letter-spacing: 2px;
+}
+
+#confirm-button:hover {
+  border: 2px solid var(--detail-color);
+  border-color: var(--detail-color);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  transition: ease-in-out;
+  transition-duration: 0.5s;
 }
 
 /* Responsividade */
@@ -160,7 +180,6 @@ button:hover {
   }
 
   .container-data {
-    border: 3px solid red;
     grid-column: 1 / 2
   }
 

@@ -22,12 +22,12 @@
 
 .card-midle {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 
 #numbers-card {
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 .card-bottom {
@@ -62,5 +62,5 @@
 }
 
 .visa-logo {
-  width: 60px;
+  width: 40px;
 }
