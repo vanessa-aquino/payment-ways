@@ -41,6 +41,8 @@ h3 {
 .datas-card {
   display: flex;
   flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
 }
 
 

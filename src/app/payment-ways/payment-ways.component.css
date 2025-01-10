@@ -2,6 +2,17 @@
   margin-top: 15px;
   margin-bottom: 15px;
   position: relative;
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 8px;
+    border: 2px solid var(--detail-color);
+    box-shadow: 10px 10px 5px 0px rgba(79,79,79,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(79,79,79,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(79,79,79,0.75);
+  }
 }
 
 .col-md-8 {
@@ -15,6 +26,11 @@
   border-bottom: 2px solid var(--secundary-color);
   color: var(--constrast-color);
   padding-bottom: 34px;
+
+  @media (min-width: 768px) {
+    border: none;
+    margin-top: 10px;
+  }
 }
 
 .col-md-8::after {
@@ -30,6 +46,19 @@
   background-color: var(--primary-color);
   bottom: -12px;
   left: 45%;
+}
+
+@media (min-width: 768px) {
+  .col-md-8::after {
+    content: none;
+  }
+
+  label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 4px;
+    color: var(--contrast-color)
+  }
 }
 
 .form-label {

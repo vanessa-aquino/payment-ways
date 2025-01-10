@@ -103,11 +103,6 @@ nav {
   margin-top: 20px;
 }
 
-
-.row > span > strong {
-  margin-left: 5px;
-}
-
 .row {
   display: flex;
   justify-content: center;
@@ -147,6 +142,7 @@ button {
 }
 
 #confirm-button {
+  max-width: 700px;
   cursor: pointer;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -173,6 +169,18 @@ button {
 /* Responsividade */
 
 @media(min-width: 768px) {
+
+  .row {
+    display: grid;
+    place-items: center;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+  }
+
+  .row > span {
+    font-size: 2.8rem;
+  }
+
   .payment .container-fluid {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -183,9 +191,13 @@ button {
     grid-column: 1 / 2
   }
 
-  #button {
+  #container-button {
     grid-column: 1 / -1;
-    text-align: center;
   }
 
 }
+
+
+
+
+

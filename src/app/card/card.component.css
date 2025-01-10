@@ -6,6 +6,7 @@
   height: 180px;
   background-color: #151522;
   border-radius: 8px;
+  max-width: 380px;
 }
 
 .card-top {
